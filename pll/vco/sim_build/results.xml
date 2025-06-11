@@ -1,6 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1745205396" />
-    <testcase name="my_first_test" classname="test_vco" file="/home/jamie/projects/python/cocotb/pll/vco/test_vco.py" lineno="6" time="31.117229223251343" sim_time_ns="10000.001" ratio_time="321.36540590599316" />
-  </testsuite>
-</testsuites>

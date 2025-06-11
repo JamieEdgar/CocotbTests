@@ -1,6 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1749673364" />
-    <testcase name="my_first_test" classname="test_fourth_order" file="/home/jamie/projects/python/cocotb/pll/MASH/fourth_order/test_fourth_order.py" lineno="1" time="19.10573172569275" sim_time_ns="512000.001" ratio_time="26798.240881372763" />
-  </testsuite>
-</testsuites>
