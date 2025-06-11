@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1749670087" />
+    <testcase name="my_first_test" classname="test_second_order" file="/home/jamie/projects/python/cocotb/pll/MASH/second_order/test_second_order.py" lineno="5" time="6.190487623214722" sim_time_ns="1000.001" ratio_time="161.53832474358444" />
+  </testsuite>
+</testsuites>
