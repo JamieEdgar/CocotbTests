@@ -10,7 +10,6 @@ def test_fourth_order():
     sim = os.getenv("SIM", "verilator")
 
     proj_path = Path(__file__).resolve().parent
-    #proj_path = "/home/jamie/git/j1s1e1/VerilogPolarCodes/test_bench/"
 
     sources = [proj_path / "stage.sv",
                proj_path / "second_order.sv",
