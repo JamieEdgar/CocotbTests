@@ -1,0 +1,20 @@
+For store operation after register operation
+    register operation takes
+        x
+    clock cycles to update register
+
+    store operation needs 1 registers before address can be calculated
+    store operation needs another register for data to write
+
+for SW instruction
+    we should toggle 2 cycles later?
+
+
+For ADDI
+    0   register is selected            update_pre set
+    1   register values are available   update set
+    2   register is updated
+
+For SW
+    0   register is selected
+    1   immed is added
