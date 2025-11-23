@@ -31,10 +31,11 @@ def half_fixed_matrix_dot_vector():
         hdl_toplevel="half_fixed_matrix_dot_vector",
         parameters={"WIDTH" :  784,
                     "HEIGHT" : 20,
-                    "MULTS" : 2}
+                    "MULTS" : 2},
+        waves=1
     )
 
-    runner.test(hdl_toplevel="half_fixed_matrix_dot_vector", test_module="half_fixed_matrix_dot_vector_test")
+    runner.test(hdl_toplevel="half_fixed_matrix_dot_vector", test_module="half_fixed_matrix_dot_vector_test",waves=1)
 
 
 if __name__ == "__main__":

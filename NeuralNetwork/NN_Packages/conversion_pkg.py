@@ -60,6 +60,12 @@ def MatrixHalfToReal(mat):
 def VectorHalfToReal(vec):
     return [DoubleFromHalf(int(element)) for element in vec]
 
+def MatrixRealToHalf(mat):
+    return [[RealToHalf(element) for element in inner_list] for inner_list in mat]
+
+def VectorRealToHalf(vec):
+    return [RealToHalf(element) for element in vec]
+
 def BytesToReal(data):
     result = []
     for i in range(len(data)):
@@ -68,6 +74,8 @@ def BytesToReal(data):
 
 if __name__ == "__main__":
     print(SingleFromHalf(1000))
+    print(SingleFromHalf(6220))
     print(RealToHalf(3.5))
     print(DoubleFromHalf(1000))
     print(DoubleToHalf(3.5))
+    print(DoubleFromHalf(17152))

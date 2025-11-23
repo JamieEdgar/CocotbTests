@@ -43,14 +43,14 @@ always @(posedge clk)
         else
             count <= count;
 
-always_comb
-    if (count < HEIGHT)
-        c = cs_reg[count];
+always @(posedge clk)
+    if ((count > 0) && (count < HEIGHT+1))
+        c <= cs_reg[count-1];
     else
-        c = 0;
+        c <= 0;
 
-always_comb
-    out_valid = (count < HEIGHT) ? 1 : 0;
+always @(posedge clk)
+    out_valid <= ((count > 0) && (count < HEIGHT+1)) ? 1 : 0;
 
 always @(posedge clk)
     if (load_matrix)

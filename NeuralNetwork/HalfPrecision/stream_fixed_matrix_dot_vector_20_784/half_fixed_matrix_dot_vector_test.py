@@ -15,7 +15,7 @@ async def toggle_clk(dut):
     await Timer(1, units="ns")
     if (dut.out_valid.value == 1):
         result = DoubleFromHalf(int(dut.c.value))
-        print("result = ", result_count, result, result - row_sums[result_count])
+        print("result = ", result_count, result, result - row_sums[result_count], int(dut.c.value))
         result_count += 1
         if result_count==10:
             result_count = 0

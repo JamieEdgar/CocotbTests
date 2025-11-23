@@ -1,5 +1,6 @@
 from file_pkg import ReadDoubles
 from conversion_pkg import *
+import numpy as np
 
 LAYER1_NEURONS = 784
 LAYER2_NEURONS = 50
@@ -71,6 +72,17 @@ def LoadImage(image_file, image):
         file.seek(offset, SEEK_SET)
         data = file.read(image_bytes)
     return data
+
+def GetOneHotLabel(label_file, image):
+    with open(label_file, 'rb') as file:
+        offset = 8 + image;
+        image_bytes = 1
+        SEEK_SET = 0
+        file.seek(offset, SEEK_SET)
+        data = file.read(image_bytes)
+    result = np.zeros(10)
+    result[data[0]] = 1
+    return result
 
 def CreateHalves(image_bytes):
     halves = []

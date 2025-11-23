@@ -63,10 +63,11 @@ def test_predict():
         hdl_toplevel="half_predict",
         parameters={
                     "LAYER1_MULTS" : 4
-                    }
+                    },
+        waves=1
     )
 
-    runner.test(hdl_toplevel="half_predict", test_module="test_predict_stream_neuron_and_image")
+    runner.test(hdl_toplevel="half_predict", test_module="test_predict_stream_neuron_and_image", waves=1)
 
 
 if __name__ == "__main__":
